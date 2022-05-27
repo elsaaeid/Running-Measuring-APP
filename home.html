@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make competition Running</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+	<center>
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <nav class="slide-in" id="navItems">
+        <a id="navItem" class="activeNav" href="index.html"><i class="fa fa-home"></i></a>
+        <a id="navItem" class="challenge active" href="home.html"><div id="div1" class="fa"></div></a>
+        <a id="navItem" class="active" href="https://elsaaeid.github.io/weather-app/"><i class="fa-solid fa-bolt"></i></a> 
+      </nav>
+    </div>
+  </div>
+  <div class="nav navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span id="barsItem" class="bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </span>
+    </button>
+  </div>
+</div>
+        <h1>Measure Your Challenge Time</h1>
+        <div class="content">
+	    <form>
+	      <input type="number" id="myNumber" placeholder="enter final score">
+	    </form>
+	    <div id="app">
+	    </div>
+            <div class="buttons">
+                <button onclick="start()" id="Start"><i class="fa-solid fa-play"></i>Start</button>
+            </div>
+        <div class="banner-wing"><img id="wing" src="assets/img/wing.png" alt=""></div>
+        </div>
+        </center>
+</div>
+<script src="assets/js/app.js"></script>
+<script>
+  function hourglass() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf251;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf252;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf253;";
+    }, 2000);
+}
+hourglass();
+setInterval(hourglass, 3000);
+</script>
+</body>
+</html>
